@@ -8,14 +8,11 @@ public class MonsterCircle {
             arr[i] = sc.nextLong();
         }
         sc.close();
-        int flag = 0;
-        int p = 0;
-        while(flag != 1){
-            if(arr[p%(arr.length)] <= 0){
-                flag = 1;
-            }else{
-                arr[p%(arr.length)] -= p; 
+        for(int i=0;;i++){
+            if(arr[i % n]-i <= 0){
+                System.out.println((i%n)+1);
+                break;
             }
-        }
+		}
     }
 }
